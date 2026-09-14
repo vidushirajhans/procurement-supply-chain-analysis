@@ -56,7 +56,8 @@ It is a real transactional data from DataCo Global,
 
 ## Dashboard
 
-!\[dashboard](screenshots/dashboard.png)
+![dashboard](./screenshots/dashboard.png)
+
 
 
 
