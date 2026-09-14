@@ -4,15 +4,7 @@
 
 ## Objective
 
-Analyzed real order-line data from a global manufacturing/retail supply chain to
-
-identify procurement consolidation opportunities and category-level
-
-standardization candidates, a methodology directly relevant to industrial
-
-inventory/procurement problems (e.g. spares consolidation, working capital
-
-reduction).
+Analyzed real order-line data from a global manufacturing/retail supply chain to identify procurement consolidation opportunities and category-level standardization candidates, a methodology directly relevant to industrial inventory/procurement problems.
 
 ## 
 
@@ -30,19 +22,11 @@ It is a real transactional data from DataCo Global,
 
 ## Method
 
-1\. Cleaned and validated \~180K order records in Excel (removed data errors,
+1\. Cleaned and validated \~180K order records in Excel (removed data errors, added calculated Order Value field).
 
-&#x20;  added calculated Order Value field).
+2\. Built a category-level summary via PivotTable: total order value, order frequency, and average profit ratio per category.
 
-2\. Built a category-level summary via PivotTable: total order value, order
-
-&#x20;  frequency, and average profit ratio per category.
-
-3\. Classified each category into \*\*High-value / Low-frequency / Stable\*\*
-
-&#x20;  using data-driven percentile thresholds (75th percentile of order value,
-
-&#x20;  25th percentile of order frequency) rather than arbitrary cutoffs.
+3\. Classified each category into \*\*High-value / Low-frequency / Stable using data-driven percentile thresholds (75th percentile of order value, 25th percentile of order frequency) rather than arbitrary cutoffs.
 
 4\. Built a Pareto (cumulative %) analysis to quantify value concentration.
 
@@ -52,61 +36,21 @@ It is a real transactional data from DataCo Global,
 
 ## Key Findings
 
-\- ***\~18% of categories (9 of 50)*** account for over 80% of total order value\*\* —
+(i) ***\~18% of categories (9 of 50)*** account (for over 80% of total order value) a small set of core categories (Fishing, Cleats, Camping \& Hiking, Cardio Equipment, Women's Apparel, Water Sports, Men's Footwear, Indoor/Outdoor Games, Shop By Sport) drives the majority of order value a classic Pareto pattern.
 
-&#x20; a small set of core categories (Fishing, Cleats, Camping \& Hiking, Cardio
+(ii) ***13 categories flagged "High-value,"*** collectively (\~93% of total order value) — recommend prioritizing supplier standardization/consolidation review here first, since this is where the greatest financial leverage sits.
 
-&#x20; Equipment, Women's Apparel, Water Sports, Men's Footwear, Indoor/Outdoor
+(iii) ***13 categories flagged "Low-frequency"*** (Sporting Goods, Health and Beauty, Strength Training, Men's Golf Clubs, Women's Golf Clubs, Men's Clothing, and others) — candidates for consolidated or less frequent procurement cycles to reduce overhead, mirroring real spares/procurement consolidation logic. Notably, the categories split into three roughlyequal groups — 13 High-value, 13 Low-frequency, and \~24 Stable — making the "focus vs. deprioritize" distinction clear and actionable.
 
-&#x20; Games, Shop By Sport) drives the majority of order value — a classic
-
-&#x20; Pareto/ABC pattern.
-
-\- ***13 categories flagged "High-value,"*** collectively \~93% of total order
-
-&#x20; value\*\* — recommend prioritizing supplier standardization/consolidation
-
-&#x20; review here first, since this is where the greatest financial leverage sits.
-
-\- ***13 categories flagged "Low-frequency"*** (Sporting Goods, Health and
-
-&#x20; Beauty, Strength Training, Men's Golf Clubs, Women's Golf Clubs, Men's
-
-&#x20; Clothing, and others) — candidates for consolidated or less frequent
-
-&#x20; procurement cycles to reduce overhead, mirroring real spares/procurement
-
-&#x20; consolidation logic. Notably, the categories split into three roughly
-
-&#x20; equal groups — 13 High-value, 13 Low-frequency, and \~24 Stable — making
-
-&#x20; the "focus vs. deprioritize" distinction clear and actionable.
-
-\- Cross-referencing value against order frequency (scatter analysis) shows
-
-&#x20; most categories cluster near the origin (low value, low frequency), while
-
-&#x20; a handful of outliers — e.g. Fishing, which combines the highest total
-
-&#x20; order value with comparatively modest order frequency — warrant individual
-
-&#x20; review rather than blanket treatment by flag alone.
+(iv) Cross-referencing value against order frequency (scatter analysis) shows most categories cluster near the origin (low value, low frequency), while a handful of outliers. Example - Fishing, which combines the highest total order value with comparatively modest order frequency — warrant individual review rather than blanket treatment by flag alone.
 
 
 
 ## Assumptions \& Limitations
 
-\- This is order-line transaction data, not warehouse stock-level data;
+\- This is order-line transaction data, not warehouse stock-level data; "inventory movement" here is inferred from order value and frequency, a standard demand-based proxy when real stock-on-hand data isn't available.
 
-&#x20; "inventory movement" here is inferred from order value and frequency, a
-
-&#x20; standard demand-based proxy when real stock-on-hand data isn't available.
-
-\- Percentile thresholds (75th/25th) were chosen for a reasonably selective
-
-&#x20; "High-value"/"Low-frequency" split; different thresholds would shift
-
-&#x20; category counts but not the underlying Pareto pattern.
+\- Percentile thresholds (75th/25th) were chosen for a reasonably selective "High-value"/"Low-frequency" split; different thresholds would shift category counts but not the underlying Pareto pattern.
 
 
 
