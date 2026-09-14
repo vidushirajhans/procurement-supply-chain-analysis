@@ -63,5 +63,5 @@ It is a real transactional data from DataCo Global,
 ## Tools
 
 Kaggle, 
-Excel, Power BI Desktop, Gitb.
+Excel, Power BI Desktop, GitHub.
 
