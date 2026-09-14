@@ -1,8 +1,8 @@
-\# Procurement \& Supply Chain Analysis — DataCo Global
+# **Procurement \& Supply Chain Analysis — DataCo Global**
 
 
 
-\## Objective
+## Objective
 
 Analyzed real order-line data from a global manufacturing/retail supply chain to
 
@@ -14,13 +14,13 @@ inventory/procurement problems (e.g. spares consolidation, working capital
 
 reduction).
 
+## 
 
+## Data Source
 
-\## Data Source
+\[\[DataCo Smart Supply Chain for Big Data Analysis]](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
 
-[\[DataCo Smart Supply Chain for Big Data Analysis]](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
-
-(Kaggle, uploaded by shashwatwork) 
+(Kaggle, uploaded by shashwatwork)
 
 It is a real transactional data from DataCo Global,
 
@@ -28,7 +28,7 @@ It is a real transactional data from DataCo Global,
 
 
 
-\## Method
+## Method
 
 1\. Cleaned and validated \~180K order records in Excel (removed data errors,
 
@@ -50,9 +50,9 @@ It is a real transactional data from DataCo Global,
 
 
 
-\## Key Findings
+## Key Findings
 
-\- \*\*\~18% of categories (9 of 50) account for over 80% of total order value\*\* —
+\- ***\~18% of categories (9 of 50)*** account for over 80% of total order value\*\* —
 
 &#x20; a small set of core categories (Fishing, Cleats, Camping \& Hiking, Cardio
 
@@ -62,13 +62,13 @@ It is a real transactional data from DataCo Global,
 
 &#x20; Pareto/ABC pattern.
 
-\- \*\*13 categories flagged "High-value," collectively \~93% of total order
+\- ***13 categories flagged "High-value,"*** collectively \~93% of total order
 
 &#x20; value\*\* — recommend prioritizing supplier standardization/consolidation
 
 &#x20; review here first, since this is where the greatest financial leverage sits.
 
-\- \*\*13 categories flagged "Low-frequency"\*\* (Sporting Goods, Health and
+\- ***13 categories flagged "Low-frequency"*** (Sporting Goods, Health and
 
 &#x20; Beauty, Strength Training, Men's Golf Clubs, Women's Golf Clubs, Men's
 
@@ -86,7 +86,7 @@ It is a real transactional data from DataCo Global,
 
 &#x20; most categories cluster near the origin (low value, low frequency), while
 
-&#x20; a handful of outliers — e.g. \*\*Fishing\*\*, which combines the highest total
+&#x20; a handful of outliers — e.g. Fishing, which combines the highest total
 
 &#x20; order value with comparatively modest order frequency — warrant individual
 
@@ -94,9 +94,9 @@ It is a real transactional data from DataCo Global,
 
 
 
-\## Assumptions \& Limitations
+## Assumptions \& Limitations
 
-\- This is order-line transaction data, not warehouse stock-level data —
+\- This is order-line transaction data, not warehouse stock-level data;
 
 &#x20; "inventory movement" here is inferred from order value and frequency, a
 
@@ -110,13 +110,13 @@ It is a real transactional data from DataCo Global,
 
 
 
-\## Dashboard
+## Dashboard
 
 !\[dashboard](screenshots/dashboard.png)
 
 
 
-\## Tools
+## Tools
 
 Excel, Power BI Desktop, Git/GitHub.
 
